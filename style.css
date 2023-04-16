@@ -1,0 +1,557 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header-container {
+    background-size: 100% 100%;
+    background-image: url(./assets/img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg);
+    height: calc(251px + 514 * ((100vw - 390px) / (1440 - 390)));
+}
+.logo {
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(16px + 16 * ((100vw - 390px) / (1440 - 390)));
+    line-height: calc(19px + 20 * ((100vw - 390px) / (1440 - 390)));
+    color: #FFFFFF;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+    height: calc(36px + 54 * ((100vw - 390px) / (1440 - 390)));
+}
+.nav-menu {
+    display: none;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav-link {
+    text-decoration: none;
+}
+.nav-link-padding {
+    margin-right: calc(20px + 20 * ((100vw - 390px) / (1440 - 390)));
+}
+.nav-link li {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(8px + 8 * ((100vw - 390px) / (1440 - 390)));
+    line-height: calc(10px + 10 * ((100vw - 390px) / (1440 - 390)));
+    color: #FFFFFF;
+}
+
+.nav-button {
+    background-color: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-size: calc(8px + 8 * ((100vw - 390px) / (1440 - 390)));
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    color: #fff;
+    font-weight: 500;
+    width: calc(41px + 62 * ((100vw - 390px) / (1440 - 390)));
+    height: calc(20px + 20 * ((100vw - 390px) / (1440 - 390)));
+}
+.preview {
+    margin-top: calc(11px + 22 * ((100vw - 390px) / (1440 - 390)));
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+}
+.preview-block {
+    width: calc(360px + 532 * ((100vw - 390px) / (1440 - 390)));
+}
+
+.preview-title {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(40px + 40 * ((100vw - 390px) / (1440 - 390)));
+    line-height: calc(48px + 48 * ((100vw - 390px) / (1440 - 390)));
+    color: #FFFFFF;
+}
+.preview-subtitle {
+    margin-top: calc(13px + 26 * ((100vw - 390px) / (1440 - 390)));
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: calc(10px + 10 * ((100vw - 390px) / (1440 - 390)));
+    line-height: calc(12px + 12 * ((100vw - 390px) / (1440 - 390)));
+    color: #FFFFFF;
+}
+.preview-planning {
+    margin-top: calc(15px + 31 * ((100vw - 390px) / (1440 - 390)));
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    height: calc(48px + 47 * ((100vw - 390px) / (1440 - 390)));
+    /* width: calc(360px + 532 * ((100vw - 390px) / (1440 - 390))); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.preview-input {
+    width: calc(226px + 334 * ((100vw - 390px) / (1440 - 390)));
+    height: calc(11px + 11 * ((100vw - 390px) / (1440 - 390)));
+    background-color: transparent;
+    border: none;
+}
+.preview-input::placeholder {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: calc(12px + 12 * ((100vw - 390px) / (1440 - 390)));
+    line-height: calc(17px + 12 * ((100vw - 390px) / (1440 - 390)));
+    color: #F2785C;
+}
+.preview-button {
+    width: calc(92px + 136 * ((100vw - 390px) / (1440 - 390)));
+    height: calc(30px + 29 * ((100vw - 390px) / (1440 - 390)));
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-size: calc(11px + 13 * ((100vw - 390px) / (1440 - 390)));
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    color: #fff;
+}
+.steps {
+    margin-top: calc(20px + 60 * ((100vw - 390px) / (1440 - 390)));
+}
+.steps-title {
+    text-align: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(14px + 26 * ((100vw - 390px) / (1440 - 390)));
+    line-height: calc(19px + 34 * ((100vw - 390px) / (1440 - 390)));
+    color: #F2785C;
+}
+.steps-article-block {
+    margin-top: calc(20px + 20 * ((100vw - 390px) / (1440 - 390)));
+    display: flex;
+    justify-content: space-around;
+}
+.steps-quad {
+    width: calc(70px + 30 * ((100vw - 390px) / (1440 - 390)));
+    height: calc(70px + 30 * ((100vw - 390px) / (1440 - 390)));
+    background: #F2785C;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.steps-subtitle {
+    margin-top: calc(20px + 10 * ((100vw - 390px) / (1440 - 390)));
+    text-align: center;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(10px + 10 * ((100vw - 390px) / (1440 - 390)));
+    line-height: calc(12px + 12 * ((100vw - 390px) / (1440 - 390)));
+    color: #0D606F;
+}
+.steps-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.destinations {
+    margin-top: calc(33px + 64 * ((100vw - 390px) / (1440 - 390)));
+}
+.destinations-title {
+    text-align: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(14px + 26 * ((100vw - 390px) / (1440 - 390)));
+    line-height: calc(19px + 34 * ((100vw - 390px) / (1440 - 390)));
+    color: #F2785C;
+}
+.destinations-imgs {
+    margin-top: calc(20px + 26 * ((100vw - 390px) / (1440 - 390)));
+    width: 100%;
+    overflow: hidden;
+}
+.destinations-imgs-slider {
+    width: calc(1110px + 1290 * ((100vw - 390px) / (1440 - 390)));
+    display: flex;
+    position: relative;
+    left: -440px;
+}
+.imgs-use {
+    margin-right:calc(15px + 45 * ((100vw - 390px) / (1440 - 390)));
+    margin-left:calc(15px + 45 * ((100vw - 390px) / (1440 - 390)));
+}
+.imgs img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.destinations-zero {
+    margin-top: calc(10px + 14 * ((100vw - 390px) / (1440 - 390)));
+    display: flex;
+    justify-content: center;
+}
+.zeros {
+    width: calc(13px + 7 * ((100vw - 390px) / (1440 - 390)));
+    height: calc(13px + 7 * ((100vw - 390px) / (1440 - 390)));
+    background: rgba(242, 120, 92, 0.5);
+    border-radius: 50%;
+}
+.zeros-use {
+    margin: 0 calc(6px + 4 * ((100vw - 390px) / (1440 - 390)));
+    background: #F2785C;
+}
+.destinations-button button {
+    width: calc(92px + 136 * ((100vw - 390px) / (1440 - 390)));
+    height: calc(30px + 29 * ((100vw - 390px) / (1440 - 390)));
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-size: calc(11px + 13 * ((100vw - 390px) / (1440 - 390)));
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    color: #fff;
+}
+.destinations-button {
+    margin-top: calc(10px + 30 * ((100vw - 390px) / (1440 - 390)));
+    display: flex;
+    justify-content: center;
+}
+.stories-title {
+    margin-top: calc(20px + 60 * ((100vw - 390px) / (1440 - 390)));
+    text-align: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(14px + 26 * ((100vw - 390px) / (1440 - 390)));
+    line-height: calc(19px + 34 * ((100vw - 390px) / (1440 - 390)));
+    color: #F2785C;
+}
+.footer-container {
+    margin-top: calc(10px + 30 * ((100vw - 390px) / (1440 - 390)));
+    background-size: 100% 100%;
+    background-image: url(./assets/img/footer.jpg);
+    height: calc(693px + 638 * ((100vw - 390px) / (1440 - 390)));
+}
+.stories {
+    padding-top: calc(10px + 30 * ((100vw - 390px) / (1440 - 390)));
+    background: rgba(255, 255, 255, 0.7);
+    height: calc(628px + 642 * ((100vw - 390px) / (1440 - 390)));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stories-article {
+    display: flex;
+    margin-bottom: calc(15px + 15 * ((100vw - 390px) / (1440 - 390)));
+}
+.stories-info {
+    width: calc(195px + 565 * ((100vw - 390px) / (1440 - 390)));
+    /* height: calc(130px + 120 * ((100vw - 390px) / (1440 - 390))); */
+}
+.stories-img {
+    width: calc(155px + 245 * ((100vw - 390px) / (1440 - 390)));
+    height: calc(130px + 120 * ((100vw - 390px) / (1440 - 390)));
+    margin-right: calc(10px + 30 * ((100vw - 390px) / (1440 - 390)));
+}
+.stories-img img{
+    width: 100%;
+    height: 100%;
+}
+.stories-subtitle {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(11px + 24 * ((100vw - 390px) / (1440 - 390)));
+    line-height: calc(13px + 29 * ((100vw - 390px) / (1440 - 390)));;
+    color: #0D606F;
+}
+.subtitle-text {
+    /* height: calc(102px + 82 * ((100vw - 390px) / (1440 - 390))); */
+    margin-top: calc(10px + 14 * ((100vw - 390px) / (1440 - 390)));
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(9px + 11 * ((100vw - 390px) / (1440 - 390)));;
+    line-height: calc(11px + 13 * ((100vw - 390px) / (1440 - 390)));;
+    color: #0D606F;
+}
+.stories-button {
+    width: calc(92px + 136 * ((100vw - 390px) / (1440 - 390)));
+    height: calc(30px + 29 * ((100vw - 390px) / (1440 - 390)));
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-size: calc(11px + 13 * ((100vw - 390px) / (1440 - 390)));
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    color: #fff;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(8px + 8 * ((100vw - 390px) / (1440 - 390)));
+    line-height: calc(10px + 10 * ((100vw - 390px) / (1440 - 390)));
+    color: #FFFFFF;
+}
+
+
+
+.popUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(181,184,177, 0.7);
+}
+.hidden {
+    visibility: hidden;
+}
+.popUp-content {
+    width: calc(650px + 0 * ((100vw - 390px) / (1440 - 390)));
+    height: calc(660px + 0 * ((100vw - 390px) / (1440 - 390)));
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.facebook-sign {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 560px;
+    height: 56px;
+    background: #1877F2;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+}
+.facebook-text {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.google-sign {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 560px;
+    height: 56px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+}
+.google-text {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D606F;
+}
+.popUp-title {
+    margin-top: 25px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #0D606F;
+}
+.popUp-email {
+    margin-top: 10px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D606F;
+}
+.popUp-password {
+    margin-top: 20px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D606F;
+}
+.input {
+    margin-top: 5px;
+    width: 560px;
+    height: 54px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+}
+.popUp-button {
+    margin-top: 25px;
+    width: 560px;
+    height: 54px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.forgot-password {
+    margin-top: 10px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #0D606F;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+.register {
+    margin-top: 20px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(13, 96, 111, 0.5);
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+.or-line {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.or {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(13, 96, 111, 0.5);
+}
+
+.line-or {
+    width: 261px;
+    height: 0px;
+    border: 1px solid rgba(13, 96, 111, 0.5);
+}
+.line {
+    margin-top: 25px;
+    width: 560px;
+    height: 0px;
+    border: 1px solid rgba(13, 96, 111, 0.5);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 390px){
+    .container {
+        max-width: 390px;
+        margin: 0 auto;
+    }
+    .header-container {
+        height: 251px;
+    }
+    .nav-list {
+        display: none;
+    }
+    .nav-button {
+        display: none;
+    }
+    nav {
+        justify-content: space-between;
+        background: none;
+        box-shadow: none;
+    }
+    .nav-menu {
+        height: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .logo-title {
+        display: none;
+    }
+    .preview-title {
+        display: none;
+    }
+    .preview-subtitle {
+        display: none;
+    }
+}
